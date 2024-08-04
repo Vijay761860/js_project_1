@@ -1,0 +1,173 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #f1f1f1;
+    
+}
+
+
+main{
+    margin: 16px;
+    padding: 0 8px;
+    height: auto;
+}
+.title{ 
+    font-size: 56px;
+    font-weight: 700;
+    color:#61481c;
+    text-align: center;
+}
+.title span{
+    color:#48a300 ;
+}
+
+.sun-img{
+    vertical-align: middle;
+    margin-left: 16px;
+}
+.app-container{ 
+    max-width: 660px;
+    background-color: #FBFBFB;
+    
+    margin: 0 auto ;
+    border-radius: 15px;
+    padding: 32px 48px;
+    box-shadow: 0 0 8px 0px rgb(231, 88, 167);
+
+}
+.progres-label{
+    color:#858585;
+    font-size: 14px;
+}
+.progress-bar{
+    height: 25px;
+    background-color: #e8eae7;
+    border-radius: 20PX;
+}
+.progess-value{
+    height: 100%;
+    background-color: #48a300;
+    border-radius: 20PX;
+    width: 30%;
+    font-size: 13px;
+    color: #EEFFE0;
+    display: flex;
+    align-items: center;
+    padding:  0 14px;
+    
+}
+.user-error{
+    font-size: 14px;
+    color: #FF5151;
+    font-weight: 500;
+}
+.gole-container{
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius:17px ;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    padding: 0 22px;
+    background-color: #ffff;
+    margin-bottom: 39px;
+
+}
+.check-box{
+    width: 24px;
+    height: 24px;
+    border: 2px solid rgb(43, 33, 46);
+    border-radius: 50%;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    /* border-color: #48a300; */
+
+    
+
+}
+.gole-input{
+    /* background-color: hotpink; */
+    border: none;
+    outline: none;
+    padding-left: 22px;
+    font-family: inherit;
+    font-size: 16px;
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    
+}
+.gole-input::placeholder{
+    color: #D9D9D9;
+}
+
+.qoute{
+    font-weight: 700;   
+     text-align: center;
+
+}
+.vijay{
+    font-weight: 500;   
+    text-align: center;
+    color: 
+    #858585;
+    margin-top: 10%;
+}
+.compleated .check-box{
+    background-color: #48a300;
+    border-color: #48a300;
+     /* display: none; */
+
+}
+.check-box{
+    /* display: none; */
+}
+
+
+
+/* bootstrap use kart ha is media query ko for responce */
+@media (max-width: 768px){
+    .title{
+    font-size: 32px;
+
+    }
+    .app-container{ 
+        padding: 16px 24px;
+    }
+    .gole-input{
+   
+    padding-left: 6px;
+
+
+    }
+    .check-box{
+        width: 22px;
+        height: 22px;
+        
+
+    }
+    .gole-container{
+        height: 64px;
+        margin-bottom: 30px;
+        border-radius: 13px;
+    padding: 0 15px;
+
+    }
+    .progess-value{
+       width: 33.33%;
+
+        font-size: 12px;
+        color: #f0ffe8;
+        display: flex;
+        align-items: center;
+        padding:  0 14px;
+        
+
+
+    }
+
+}
