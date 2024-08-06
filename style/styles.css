@@ -7,8 +7,6 @@ body{
     background-color: #f1f1f1;
     
 }
-
-
 main{
     margin: 16px;
     padding: 0 8px;
@@ -63,6 +61,8 @@ main{
     font-size: 14px;
     color: #FF5151;
     font-weight: 500;
+    position: absolute;
+    margin-top: 2px;
 }
 .gole-container{
     border: 1px solid rgba(0,0,0,0.1);
@@ -84,13 +84,15 @@ main{
     cursor: pointer;
     display: flex;
     align-self: center;
-    /* border-color: #48a300; */
+    justify-content: center;
 
-    
 
 }
+.check-icon {
+    display: none;
+    
+}
 .gole-input{
-    /* background-color: hotpink; */
     border: none;
     outline: none;
     padding-left: 22px;
@@ -99,6 +101,7 @@ main{
     flex-grow: 1;
     height: 100%;
     width: 100%;
+    font-weight: 500;
     
 }
 .gole-input::placeholder{
@@ -117,18 +120,34 @@ main{
     #858585;
     margin-top: 10%;
 }
-.compleated .check-box{
+/* .compleated .check-box{
     background-color: #48a300;
     border-color: #48a300;
      /* display: none; */
 
+/* } 
+ .check-box{
+    display: none; 
+} */
+.compleat .check-box{
+    background: #48a300;
+    border-color: #48a300;
+
 }
-.check-box{
-    /* display: none; */
+.compleat .check-icon{
+    display: block;
 }
+.compleat .gole-input{
+    color: #48a300;
+    text-decoration: line-through;
 
-
-
+}
+.gole-container{
+    margin-top: 40px;
+}
+.user-error{
+    display: none;
+}
 /* bootstrap use kart ha is media query ko for responce */
 @media (max-width: 768px){
     .title{
