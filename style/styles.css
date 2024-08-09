@@ -49,13 +49,18 @@ main{
     height: 100%;
     background-color: #48a300;
     border-radius: 20PX;
-    width: 30%;
+    width: 0;
     font-size: 13px;
     color: #EEFFE0;
     display: flex;
     align-items: center;
-    padding:  0 14px;
+    /* padding:  0 14px; */
+    overflow: hidden;
     
+}
+.progess-value span{
+    padding-left: 10px;
+
 }
 .user-error{
     font-size: 14px;
@@ -148,6 +153,11 @@ main{
 .user-error{
     display: none;
 }
+
+.show-error .user-error{
+    display: block;
+}
+
 /* bootstrap use kart ha is media query ko for responce */
 @media (max-width: 768px){
     .title{
